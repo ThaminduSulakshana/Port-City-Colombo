@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SupDetails">
+
+        <ImageView
+            android:id="@+id/imagelogo"
+            android:layout_width="306dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_main" />
+
+        <TextView
+            android:id="@+id/TemID"
+            android:layout_width="147dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="192dp"
+            android:text="xxxxxxxxxx"
+            android:textColor="@color/maintext"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagelogo" />
+
+        <TextView
+            android:id="@+id/temIDy"
+            android:layout_width="129dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="60dp"
+            android:text="'s Message"
+            android:textColor="#042293"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagelogo" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_mini"
+            android:layout_width="385dp"
+            android:layout_height="409dp"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/inputback"
+            android:backgroundTint="#4800A4ED"
+            android:radius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temIDy">
+
+
+            <TextView
+                android:id="@+id/TempType"
+                android:layout_width="243dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/inputback"
+                android:backgroundTint="@color/inputbackc"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/inputtext"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TempName"
+                android:layout_width="243dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/inputback"
+                android:backgroundTint="@color/inputbackc"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/inputtext"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.852"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TempType" />
+
+            <TextView
+                android:id="@+id/TempEmail"
+                android:layout_width="243dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/inputback"
+                android:backgroundTint="@color/inputbackc"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/inputtext"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.852"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TempName" />
+
+            <TextView
+                android:id="@+id/TempPhone"
+                android:layout_width="243dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/inputback"
+                android:backgroundTint="@color/inputbackc"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/inputtext"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.852"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TempEmail" />
+
+            <TextView
+                android:id="@+id/TempReason"
+                android:layout_width="241dp"
+                android:layout_height="97dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/inputback"
+                android:backgroundTint="@color/inputbackc"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/inputtext"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.852"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TempPhone" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="97dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Type"
+                android:textColor="@color/inputtext"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/TempType"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="97dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/inputtext"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/TempName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="97dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Email"
+                android:textColor="@color/inputtext"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/TempEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="97dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Phone No"
+                android:textColor="@color/inputtext"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/TempPhone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="97dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="Reason"
+                android:textColor="@color/inputtext"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/TempReason"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btngoUpdate"
+            android:layout_width="107dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/btnsub"
+            android:text="update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout_mini" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="107dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="152dp"
+            android:backgroundTint="@color/backbtn"
+            android:text="delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout_mini" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="107dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="336dp"
+            android:backgroundTint="@color/backbtn"
+            android:text="back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout_mini" />
+
+        <TextView
+            android:id="@+id/copy_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="83dp"
+            android:text="© Android Alchemist. All rights reserved."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout_mini" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

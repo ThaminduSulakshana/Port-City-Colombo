@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CareerMain">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/top_bg"
+        android:backgroundTint="#03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="274dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/newlogo" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Crd1"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#071563"
+        android:clickable="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/crd2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBeach"
+            android:layout_width="127dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/img" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvFind"
+        android:layout_width="321dp"
+        android:layout_height="36dp"
+        android:text="@string/find"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <TextView
+        android:id="@+id/tvBeach"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="284dp"
+        android:text="@string/beachpark"
+        android:textAlignment="gravity"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crd2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/crdcolor"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/crd1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgClub"
+            android:layout_width="120dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/img_1" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvClub"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/ClubHouse"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crd3"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#071563"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/crd4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661">
+
+        <ImageView
+            android:id="@+id/imgCHEC"
+            android:layout_width="127dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/img_3" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crd4"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#071563"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/crd3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646">
+
+        <ImageView
+            android:id="@+id/imgFinance"
+            android:layout_width="134dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/img_2" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvCHEC"
+        android:layout_width="136dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/CHEC"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
+    <TextView
+        android:id="@+id/tvFinance"
+        android:layout_width="172dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Finance"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806" />
+
+    <ImageView
+        android:id="@+id/imgSearch"
+        android:layout_width="32dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_search_24" />
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="53dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toEndOf="@+id/imgSearch"
+        app:srcCompat="@drawable/baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/dashboard"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgSearch"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_dashboard_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

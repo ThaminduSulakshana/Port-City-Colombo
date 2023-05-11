@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Book-App</string>
+    <string name="new_user_signup">New User ? <b>SignUp</b> </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string> <!--make signup bold-->
+
+
+    <string name="find">Find Your Dream Career Here</string>
+    <string name="beachpark">The Beach Park</string>
+    <string name="topic">#We Are Hiring Event Manager</string>
+    <string name="EventCoordinator">Event-COordinotor</string>
+    <string name="Apply">Apply-Now!!</string>
+    <string name="event">Event Manager</string>
+    <string name="vacDescription">Are you a people person who enjoys meeting and greeting people ? Would you like to work at an ocean front venue in the heart of Colombo</string>
+    <string name="Interest">Interested? Apply Now!</string>
+    <string name="FirstName">First Name</string>
+    <string name="inter">Interested? Apply Now!</string>
+    <string name="ClubHouse">Club House</string>
+    <string name="CHEC">CHEC Company</string>
+    <string name="Finance">Finance Center</string>
+    <string name="submit">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="Attach">Attach Your CV</string>
+
+
+    <string name="btnSubmit">submit</string>
+    <string name="btnShow">Show</string>
+    <string name="btnContact">contact</string>
+    <string name="btnBack">Go Back</string>
+    <string name="btnFaq">faq</string>
+
+    <string-array name="selection_type">
+        <item disabled="true">Select type</item>
+        <item>ALL</item>
+        <item>Company background</item>
+        <item>Project background</item>
+        <item>Investor Relations Environment</item>
+
+    </string-array>
+    <string name="title_activity_list">list</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".hotelPlot">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="317dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="47dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_f" />
+
+        <Button
+            android:id="@+id/Nonbutton6"
+            android:layout_width="292dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:text="Request a Residance Plot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+        <!--    FORM-->
+
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="338dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frominput"
+            android:ems="10"
+            android:hint="Name : "
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.356"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="338dp"
+            android:layout_height="32dp"
+
+
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="31dp"
+            android:background="@drawable/frominput"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="338dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/frominput"
+            android:ems="10"
+            android:hint="Phone No:"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.216"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtRes" />
+
+        <EditText
+            android:id="@+id/edtRes"
+            android:layout_width="338dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="26dp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/frominput"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Residance Country: "
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+        <EditText
+            android:id="@+id/edtReg"
+            android:layout_width="338dp"
+            android:layout_height="32dp"
+
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="47dp"
+            android:background="@drawable/frominput"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Businness Registration ID : "
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtHotel" />
+
+        <EditText
+            android:id="@+id/edtHotel"
+            android:layout_width="338dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+
+            android:background="@drawable/frominput"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Hotel Name : "
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.216"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtComEmail" />
+
+        <EditText
+            android:id="@+id/edtComEmail"
+            android:layout_width="338dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/frominput"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Company Email : "
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPhone" />
+
+        <EditText
+            android:id="@+id/edtFloor"
+            android:layout_width="338dp"
+            android:layout_height="32dp"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/frominput"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Select the requesting Floor : "
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.356"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtReg" />
+
+        <EditText
+            android:id="@+id/edtDes"
+            android:layout_width="365dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/frominput"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Discription about Your Hotel : : "
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtFloor"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnUpdateData"
+            android:layout_width="146dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="133dp"
+            android:layout_marginBottom="52dp"
+            android:text="Save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDes"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="244dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="16dp"
+            android:text="Fill the correct details on your own"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nonbutton6" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

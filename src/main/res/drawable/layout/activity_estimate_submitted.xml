@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstimateSubmitted">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="290dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_f" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar8"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="399dp"
+        android:layout_height="170dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="15dp"
+        app:backgroundTint="#434DA4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="BottomAppBar" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar9"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="395dp"
+        android:layout_height="185dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="4dp"
+        app:backgroundTint="#6427E5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomAppBar8"
+        tools:ignore="BottomAppBar" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar14"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="396dp"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="11dp"
+        app:backgroundTint="#D71B5F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomAppBar9"
+        tools:ignore="BottomAppBar" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar15"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="396dp"
+        android:layout_height="28dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="11dp"
+        app:backgroundTint="#1ACE37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomAppBar14"
+        tools:ignore="BottomAppBar" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="152dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar8"
+        app:srcCompat="@drawable/submit" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="200dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:text="Your request was submitted !"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+
+        app:backgroundColor="#F3EBEB"
+        app:drawableTint="#F3EBEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/changeRequestBtn"
+        android:layout_width="372dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="24dp"
+        android:text="Do you need any changes in your submitted request?"
+        app:backgroundTint="#5D1DE3"
+        app:layout_constraintStart_toStartOf="@+id/bottomAppBar9"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/deleteRequestBtn"
+        android:layout_width="365dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="16dp"
+        android:text="do you mind you need to delete your submitted request?"
+        app:backgroundTint="#DC185F"
+        app:layout_constraintStart_toStartOf="@+id/bottomAppBar14"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar14" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="183dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:text="Back to home"
+        app:backgroundTint="#09DA2B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteRequestBtn"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

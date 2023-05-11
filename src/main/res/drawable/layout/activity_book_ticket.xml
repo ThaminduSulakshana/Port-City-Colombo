@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/header_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Payment Form"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="@color/purple_500"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/card_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_textview"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Card Number:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/card_number_editText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_number_label"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="0000 0000 0000 0000"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/amount_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_number_editText"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Amount to Pay:"
+        android:textSize="16sp" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/amount_number_editText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount_number_label"
+        android:inputType="number"
+        android:hint="Amount"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/expiry_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount_number_editText"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/expiry_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date:"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/expiry_month_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/expiry_date_label"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:layout_marginTop="18dp"
+            android:maxLength="2"
+            android:hint="MM"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/separator_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-1dp"
+            android:layout_toRightOf="@+id/expiry_month_editText"
+            android:layout_marginTop="18dp"
+            android:text="/"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/expiry_year_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/separator_label"
+            android:inputType="number"
+            android:layout_marginTop="18dp"
+            android:maxLength="2"
+            android:hint="YY"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cvv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expiry_date_layout"
+        android:layout_marginTop="16dp"
+        android:text="CVV:"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/cvv_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvv_label"
+        android:inputType="number"
+        android:layout_marginTop="8dp"
+        android:maxLength="3"
+        android:hint="Enter CVV"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/pay_button"
+        android:layout_below="@+id/cvv_editText"
+        android:layout_width="300dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:text="Pay Now"/>
+</RelativeLayout>

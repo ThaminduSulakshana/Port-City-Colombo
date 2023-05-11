@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page2">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar7"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="313dp"
+        android:layout_height="33dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="12dp"
+        app:backgroundTint="#D9D9D9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        tools:ignore="BottomAppBar" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="290dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_f" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="215dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="12dp"
+        android:text="INVESTMENT OPPORTUNITIES"
+        app:layout_constraintEnd_toEndOf="@+id/bottomAppBar7"
+        app:layout_constraintStart_toStartOf="@+id/bottomAppBar7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="371dp"
+        android:layout_height="335dp"
+        android:layout_marginTop="26dp"
+        android:text='"Port City Colombo was identified as one of the priority projects in the Central Business District and the Colombo Metro Area (CMA). In 2014, the Port City Master Plan was prepared for the 269.3 ha reclaimed site. The plan aims to innovate and design a new world-leading city development based on best international experience, especially adapted to the Sri Lankan context and the site specific conditions. The new city will tap into the intrinsic values of the region and environment to create an ideal modern community for business, living and leisure. The COLOMBO PORT CITY Master Plan will provide detailed land use regulations and development control regulations (DCR) to ensure all participants in the development of Colombo Port City, including architects, designers, builders, developers and operators contribute to the realization of the desired vision and character for the new city."'
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/livingIslandSlectedBtn" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Click on a district to for more details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <!--Marina distric Button -->
+    <Button
+        android:id="@+id/btnagain"
+        android:layout_width="295dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="21dp"
+        android:text="MARINA DISTRICT"
+        app:backgroundTint="#D9D9D9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomAppBar7" />
+
+    <Button
+        android:id="@+id/livingIslandSlectedBtn"
+        android:layout_width="295dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="LIVING ISLAND"
+        app:backgroundTint="#D9D9D9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnagain" />
+</androidx.constraintlayout.widget.ConstraintLayout>
